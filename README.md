@@ -1,3 +1,8 @@
+React 기능을 최대한 활용한 단어장 만들기 project.
+- json server를 활용해서 간단하게 RESTapi를 활용해볼 수 있었다.
+- 가볍게 custom hook에 대해서 알아볼 수 있었다.
+- 이 후, typescript 적용 예정
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
