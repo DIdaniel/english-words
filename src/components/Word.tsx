@@ -1,6 +1,18 @@
 import React, { useState } from 'react'
 
-const Word = ({word: w}) => {
+interface Iprops {
+  word: IWord;
+}
+
+export interface IWord {
+  day: string;
+  eng: string;
+  kor: string;
+  isDone: boolean;
+  id: number;
+}
+
+const Word = ({word: w}: Iprops) => {
 
   const [word, setWord] = useState(w);
   const [isShow, setIsShow] = useState(false);
@@ -36,7 +48,10 @@ const Word = ({word: w}) => {
       })
         .then(res => {
           if(res.ok) {
-            setWord({ids: 0});
+            setWord({
+            ...word,
+            id: 0,
+          })
           }
         })
     }
